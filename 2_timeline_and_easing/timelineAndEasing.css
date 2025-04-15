@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: #3498db;
+  border-radius: 10px;
+}
+
+.box2 {
+  background-color: #e74c3c;
+}
+
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #9b59b6;
+  border-radius: 50%;
+  margin: 40px auto;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px; /* 圆角效果 */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(145deg, #6e7dff, #4f5fd3); /* 渐变背景 */
+  color: white; /* 文字颜色 */
+  transition: all 0.3s ease; /* 平滑过渡 */
+}
+
+/* 鼠标悬停效果 */
+button:hover {
+  background: linear-gradient(145deg, #4f5fd3, #6e7dff); /* 反转渐变 */
+  transform: translateY(-2px); /* 向上浮动 */
+}
+
+/* 点击时效果 */
+button:active {
+  transform: translateY(2px); /* 点击时向下沉 */
+  background: linear-gradient(145deg, #4f5fd3, #6e7dff); /* 点击时渐变背景 */
+}
+
+.all-cards {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card-row {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;         
+  height: 250px;         
+  box-sizing: border-box;
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #555;
+}
